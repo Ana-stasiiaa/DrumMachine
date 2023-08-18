@@ -1,0 +1,48 @@
+body {
+  background: #eef2e2;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#drum-machine {
+  text-align: center;
+}
+
+.header {
+  font-size: 1rem;
+  color: #a16d54;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+}
+
+.drum-pad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background: #402a23;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.drum-pad:hover {
+  background: #777;
+}
+
+.clip {
+  display: none;
+}
